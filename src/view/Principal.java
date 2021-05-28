@@ -17,6 +17,8 @@ public class Principal {
 		try {
 			arqCont.readDir(dirWin);
 			arqCont.createFile(patch, nome);
+			arqCont.readFile(patch, nome);
+			arqCont.openFile(patch, nome);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
